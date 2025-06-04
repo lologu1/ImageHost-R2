@@ -1,5 +1,5 @@
 async function fetchConfig() {
-  const res = await fetch("https://img.lologu.tk/config");
+  const res = await fetch("https://api.nbvil.com/config");
   if (!res.ok) throw new Error("获取配置失败");
   return await res.json();
 }
@@ -10,8 +10,9 @@ async function initializeSupabase() {
 
   window.IMG_BED_CONFIG = config;
 
-  window.supabase = window.supabase.createClient(
+  // 修改这里的初始化方式
+  window.supabase = supabase.createClient(
     config.supabaseUrl,
     config.supabaseAnonKey
   );
-}
+} 
