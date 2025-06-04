@@ -1,5 +1,5 @@
 async function fetchConfig() {
-  const res = await fetch("https://img.lologu.tk/config");
+  const res = await fetch("https://image.lologu.tk/config");
   if (!res.ok) throw new Error("获取配置失败");
   return await res.json();
 }
