@@ -10,9 +10,8 @@ async function initializeSupabase() {
 
   window.IMG_BED_CONFIG = config;
 
-  // 修改这里的初始化方式
-  window.supabase = supabase.createClient(
+  window.supabase = window.supabase.createClient(
     config.supabaseUrl,
     config.supabaseAnonKey
   );
-} 
+}
