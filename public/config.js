@@ -1,5 +1,5 @@
 async function fetchConfig() {
-  const res = await fetch("https://imagehost-r2-86s.pages.dev/config");
+  const res = await fetch("https://image.lologu.workers.dev/config");
   if (!res.ok) throw new Error("获取配置失败");
   return await res.json();
 }
