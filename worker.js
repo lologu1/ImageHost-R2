@@ -11,7 +11,7 @@ export default {
 
     // 定义允许的来源（可以根据实际需求修改）
     const allowedOrigins = [
-      'https://imagehost-r2-86s.pages.dev',  // Cloudflare Pages 正式地址
+      'https://img.lologu.tk',  // Cloudflare Pages 正式地址
       'https://username.github.io',  // GitHub Pages 地址
       'http://localhost:8787'        // 本地开发调试
     ];
